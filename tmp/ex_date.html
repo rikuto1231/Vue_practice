@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <title>tmp</title>
+</head>
+<body>
+    
+    <div id="app" class="">
+        <ul class="">
+            <li v-for="(value, key) in obj" :key="key" class="menu-item">
+                ・{{key}}:{{value}}
+            </li>
+        </ul>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="ex_script.js"></script>
+</body>
+</html>

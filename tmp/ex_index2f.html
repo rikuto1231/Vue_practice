@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.3/css/bulma.min.css">
+
+    <title>tmp</title>
+</head>
+<body>
+    
+    <div id="app" >
+        <p>学籍番号</p>
+        <input type="text" name="number" v-model="number">
+        <p v-if="NumberCheck" class="has-text-danger">学籍番号は数字7桁で入力してください</p>
+
+        <p>名前</p>
+        <input type="text" name="name" v-model="name">
+        <p v-if="NameCheck" class="has-text-danger">名前は4文字以上で入力してください</p>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="ex_script2f.js"></script>
+</body>
+</html>
+
+
+
